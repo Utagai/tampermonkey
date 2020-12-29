@@ -1,5 +1,5 @@
 // ==UserScript==
-// @name         Hide the cringey webtoons comment section
+// @name         Hide the webtoons comment section
 // @namespace    http://tampermonkey.net/
 // @version      0.1
 // @description  try to take over the world!
