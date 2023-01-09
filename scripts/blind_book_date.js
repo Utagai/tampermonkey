@@ -57,7 +57,7 @@ NOTE: This code is not clean and likely never will be. Deal with it.
         async function dive(url, depth, blocklist) {
             console.log('Diving to: ', url, 'current depth: ', depth);
             if (depth <= 0) {
-                console.log('Nice, finished diving on person: ', url);
+                // BUG: This can return a private profile as the base case, which will error.
                 return getUserIDFromShowURL(url)
             }
 
@@ -180,7 +180,7 @@ NOTE: This code is not clean and likely never will be. Deal with it.
         }).catch((err) => console.error(err))
 
         console.log('Random book: ', book_summary);
-        alert(JSON.stringify(book_summary, null, 2));
+        alert("Blind book date:\n" + JSON.stringify(book_summary, null, 2));
     };
 
     document.onkeypress = async function (e) {
