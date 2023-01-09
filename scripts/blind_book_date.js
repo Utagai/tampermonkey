@@ -183,10 +183,14 @@ NOTE: This code is not clean and likely never will be. Deal with it.
         alert(JSON.stringify(book_summary, null, 2));
     };
 
-    document.onkeypress = function (e) {
+    document.onkeypress = async function (e) {
         e = e || window.event;
         if (e.code === "Minus" || e.code == "Equal") {
-            bookdate();
+            try {
+                await bookdate();
+            } catch (e) {
+                alert(e)
+            }
         }
     };
 })();
