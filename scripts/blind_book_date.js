@@ -24,9 +24,9 @@ NOTE: This code is not clean and likely never will be. Deal with it.
             blocklist: [
                 'https://www.goodreads.com/user/show/125119013-alice', // Alice only has us & another mututal friend on her friendlist, so she essentially doubles the chance of our mutual friend being the first dive. This isn't good for randomness.
             ],
-            maxPages: 1,
-            minBooks: 100,
-            maxLoops: 10,
+            maxPages: 3,
+            minBooks: 50,
+            maxLoops: 20,
         };
 
         function getUserIDFromShowURL(url) {
