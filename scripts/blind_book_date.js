@@ -11,6 +11,7 @@
 
 /**
 NOTE: THIS IS A WIP SCRIPT! LIKELY HAS BUGS/UNHANDLED EDGE CASES!
+NOTE: This code is not clean and likely never will be. Deal with it.
 */
 
 (async function() {
