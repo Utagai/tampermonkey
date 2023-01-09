@@ -180,6 +180,7 @@ NOTE: This code is not clean and likely never will be. Deal with it.
         }).catch((err) => console.error(err))
 
         console.log('Random book: ', book_summary);
+        alert(JSON.stringify(book_summary, null, 2));
     };
 
     document.onkeypress = function (e) {
