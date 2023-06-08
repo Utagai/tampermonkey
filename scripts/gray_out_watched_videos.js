@@ -13,7 +13,7 @@
     'use strict';
 
     setInterval(() => {
-      let els = document.getElementsByTagName('ytd-grid-video-renderer')
+      let els = document.getElementsByTagName('ytd-rich-item-renderer')
 
       for (let i = 0; i < els.length; i++) {
         let progress = els[i].querySelector("#progress");
