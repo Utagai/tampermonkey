@@ -13,10 +13,12 @@
     'use strict';
 
     setInterval(() => {
-        Array.from(document.getElementsByTagName("ytd-grid-video-renderer")).forEach((vid) => {
-            if (vid.querySelectorAll('[overlay-style="SHORTS"]').length > 0) {
-                vid.remove()
-            }
-        })
+        try {
+            Array.from(document.getElementsByTagName("ytd-rich-item-renderer")).forEach((vid) => {
+                if (vid.querySelectorAll('[href*="/shorts/"]').length > 0) {
+                    vid.remove()
+                }
+            })
+        } catch {}
     }, 1000)
 })();
